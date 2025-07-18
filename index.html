@@ -2,178 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brighter Arizona LED</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8f7f1;
-      color: #333;
-      line-height: 1.6;
-      padding: 1rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    header {
-      background: #d35400;
-      color: white;
-      padding: 1.5rem 1rem;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(211, 84, 0, 0.6);
-    }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.3rem; }
-    header p { font-style: italic; font-size: 1.2rem; opacity: 0.9; }
-    nav {
-      margin: 1rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 1.2rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #d35400;
-      font-weight: 600;
-      font-size: 1.1rem;
-      padding: 0.3rem 0.7rem;
-      border-radius: 5px;
-      transition: background 0.3s, color 0.3s;
-    }
-    nav a:hover {
-      background: #d35400; color: white;
-      box-shadow: 0 2px 8px rgba(211,84,0,0.8);
-    }
-    section {
-      margin-bottom: 2rem;
-      padding: 1rem;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #ba4a00;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #d35400;
-      padding-bottom: 0.3rem;
-    }
-    ul.services-list {
-      list-style-type: none;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    ul.services-list li {
-      background: #f3dbb7;
-      padding: 1rem;
-      border-radius: 10px;
-      flex: 1 1 40%;
-      box-shadow: 0 2px 6px rgba(211,84,0,0.3);
-      font-weight: 600;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .gallery img {
-      max-width: 280px;
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 3px 10px rgba(211,84,0,0.4);
-      transition: transform 0.3s;
-      cursor: pointer;
-    }
-    .gallery img:hover { transform: scale(1.05); }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 400px;
-      margin: auto;
-    }
-    input, textarea {
-      padding: 0.8rem;
-      border-radius: 8px;
-      border: 1px solid #d35400;
-      font-size: 1rem;
-      resize: vertical;
-      font-family: inherit;
-    }
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #ba4a00;
-      box-shadow: 0 0 5px #ba4a00;
-    }
-    button {
-      background: #d35400;
-      color: white;
-      border: none;
-      padding: 1rem;
-      font-size: 1.1rem;
-      font-weight: 700;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.4s;
-    }
-    button:hover { background: #ba4a00; }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      padding: 1rem;
-      color: #876445;
-      font-style: italic;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      ul.services-list { flex-direction: column; }
-      .gallery { flex-direction: column; align-items: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Brighter Arizona LED</h1>
-    <p>Illuminate your Arizona home with permanent, energy-efficient LED lighting</p>
+    <p>Permanent LED lighting for your home</p>
   </header>
+
   <nav>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
   </nav>
+
   <section id="services">
     <h2>Our Services</h2>
-    <ul class="services-list">
-      <li>Permanent LED Installations for Arizona-style homes</li>
-      <li>Customizable Christmas & Holiday Light Installations</li>
-    </ul>
-  </section>
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <!-- Replace these images with mockup models of Arizona homes if available -->
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Arizona style home with permanent LED lighting">
-      <img src="https://images.unsplash.com/photo-1570570422854-7ee6e2628081?auto=format&fit=crop&w=400&q=80" alt="Arizona home with Christmas lights">
+    <div class="grid">
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1601064767128-98f66f5aa5bd?auto=format&fit=crop&w=800&q=80" alt="Warm white LED lighting">
+        <h3>Warm White LEDs</h3>
+        <p>Soft, inviting lighting for year-round curb appeal.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1603575431345-d6e6f07f1b92?auto=format&fit=crop&w=800&q=80" alt="Color-changing LED lights">
+        <h3>Color-changing LEDs</h3>
+        <p>Programmable colors to match any occasion or season.</p>
+      </div>
     </div>
   </section>
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="tel" name="phone" placeholder="Phone Number">
-      <textarea name="message" rows="4" placeholder="Tell us what you're interested in" required></textarea>
-      <button type="submit">Send Inquiry</button>
-    </form>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="grid">
+      <img src="https://images.unsplash.com/photo-1602233158243-2e6fdc2f3c72?auto=format&fit=crop&w=800&q=80" alt="House with LED lights">
+      <img src="https://images.unsplash.com/photo-1602233158650-e8cdcf3db7cb?auto=format&fit=crop&w=800&q=80" alt="Permanent holiday lights on home">
+    </div>
   </section>
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Based in Arizona, Brighter Arizona LED specializes in permanent and holiday lighting solutions for homes that reflect the beauty and style of the Southwest. Our goal is to make your home shine all year round with energy-efficient, custom LED installations.</p>
+
+  <section id="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review">
+      <p>"Amazing quality work and great service!"</p>
+      <strong>- Alex G., Phoenix</strong>
+    </div>
+    <div class="review">
+      <p>"The permanent lights make our house look incredible year-round."</p>
+      <strong>- Maria S., Scottsdale</strong>
+    </div>
+    <div class="review">
+      <p>"Affordable, fast install, and super clean look."</p>
+      <strong>- James K., Mesa</strong>
+    </div>
   </section>
+
   <footer>
-    &copy; 2025 Brighter Arizona LED. All rights reserved.
+    <p>© 2025 Brighter Arizona LED</p>
   </footer>
 </body>
 </html>
